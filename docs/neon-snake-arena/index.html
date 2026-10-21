@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>霓虹贪食蛇 · V4.4</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="app">
+<div id="game-world">
+        <canvas id="game-canvas"></canvas>
+
+        <!-- Stats HUD -->
+        <div class="hud stats-panel">
+            <div class="hud-panel length-card">
+                <div class="stat-row">
+                    <span class="stat-label">长度</span>
+                    <span class="stat-value" id="length-display">0</span>
+                </div>
+            </div>
+            <div class="hud-panel kills-card">
+                <div class="stat-row">
+                    <span class="stat-label">击败电脑蛇</span>
+                    <span class="stat-value" id="kills-display">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leaderboard HUD -->
+        <div class="hud leaderboard-panel hud-panel">
+            <h2>本局竞技榜</h2>
+            <p class="board-caption">你与电脑蛇</p>
+            <div id="leaderboard-content"></div>
+        </div>
+
+        <!-- Death Screen -->
+        <div id="death-screen" class="death-screen hidden">
+            <h1 id="result-title">这一局，收下了</h1>
+            <div class="death-stat">
+                <span class="death-stat-label">本局长度</span>
+                <span class="death-stat-value" id="final-length">0</span>
+            </div>
+            <div class="death-stat">
+                <span class="death-stat-label">击败电脑蛇</span>
+                <span class="death-stat-value" id="final-kills">0</span>
+            </div>
+            <div class="death-stat">
+                <span class="death-stat-label">个人最高</span>
+                <span class="death-stat-value" id="best-length">0</span>
+            </div>
+            <p id="result-goal"></p>
+            <p id="respawn-countdown">准备好，再出发</p>
+            <button id="continue-button" type="button" class="club-primary">再来一局</button>
+            <div class="result-actions">
+              <button id="card-button" type="button">查看成绩卡</button>
+              <button id="comment-button" type="button">晒到评论区</button>
+              <button id="result-records" type="button">个人纪录</button>
+            </div>
+            <p id="share-status" role="status"></p>
+            <p id="result-storage" role="status"></p>
+            <img id="card-preview" alt="本局成绩卡" hidden>
+        </div>
+        <div class="play-tools">
+          <p id="challenge-hud">挑战 30 节</p>
+          <button id="pause-button" type="button">暂停</button>
+          <button id="records-button" type="button">个人纪录</button>
+        </div>
+    </div>
+    <section id="launch" aria-label="开始游戏">
+      <img src="./assets/cover.webp" alt="Neon Snake Arena" width="327" height="490">
+      <div class="launch-actions">
+        <button id="start-button" type="button">开始游戏</button>
+        <p id="launch-record">正在读取纪录…</p>
+        <button id="launch-records" type="button">个人纪录与挑战目标</button>
+        <p>手指指向转弯方向 · 吃光点变长 · 避开蛇身</p>
+      </div>
+    </section>
+    <section id="records-panel" class="club-overlay" aria-label="个人纪录与挑战目标" hidden>
+      <div class="club-sheet">
+        <div class="sheet-heading"><h2>我的霓虹纪录</h2><button id="close-records" type="button">返回</button></div>
+        <p class="best-label">个人最高</p><strong id="personal-best">0 节</strong>
+        <p id="recent-count"></p>
+        <ol id="personal-rows"></ol>
+        <label for="target-input">下次想长到多少节？</label>
+        <div class="target-actions"><input id="target-input" type="number" min="8" max="500" step="1" inputmode="numeric" value="30"><button id="set-target" type="button">设置目标</button></div>
+        <button id="best-target" type="button">挑战自己的最高纪录</button>
+        <p id="target-status" role="status"></p>
+        <p id="storage-status" role="status"></p>
+        <p class="fine-print">个人榜只记录你自己的对局，不是全站或好友排行榜。记录最近 20 局，展示其中前 5 名。卸载或清理数据后可能丢失。</p>
+      </div>
+    </section>
+  </main>
+  <script src="./records.js"></script>
+  <script src="./club.js"></script>
+  <script src="./game.js"></script>
+</body>
+</html>

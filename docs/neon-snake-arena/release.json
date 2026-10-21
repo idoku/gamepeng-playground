@@ -1,0 +1,25 @@
+{
+  "source_repository": "https://github.com/idoku/neon-snake-arena",
+  "source_branch": "master",
+  "source_commit": "fef5bba27a4c03ce99252433925719db74ba4950",
+  "slug": "neon-snake-arena",
+  "title": "霓虹贪食蛇",
+  "description": "滑动转向吞食光点，在霓虹竞技场争取更长纪录。",
+  "version": "4.4.0",
+  "runtime_zip_sha256": "7244ddad8030271ea3300003be9f69c69fbbc4ff69454d0d48e8c79135cab949",
+  "runtime_zip_bytes": 91261,
+  "files": {
+    "assets/cover.webp": "a6fec1bb77ef77ed5175731ae90d24c71a6fcfd3f2900e260462eb01cbf5b9ad",
+    "assets/inter-latin.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "assets/press-start-2p-latin.woff2": "afec86997fdaf54af1f59358fa2c1e2a0f1d04146edad18e5cd141d0384a7548",
+    "club.js": "ca655ba0510db3363476ba6aee822c20053554a5753173e767d2f19765ced879",
+    "game.js": "75a31a3cb80238b1164a96db46fae0d0c27b105580b115cf46b10bcf80dd8c78",
+    "index.html": "873f90711588a4843031570f123c95977a8f71f2e37ab05587f1b30a171d9b4a",
+    "records.js": "a3656b02586517041954ead301daf13fda5c73be9ca969d26771cb9bc7a5f6f3",
+    "style.css": "4bc8aad91f845050596b2a4ce80f1ec5cea4ca58f59071123a52a7bd80034e18"
+  },
+  "play_path": "neon-snake-arena/",
+  "browser_acceptance": "pending",
+  "phone_acceptance": "pending",
+  "audio_acceptance": "pending"
+}
