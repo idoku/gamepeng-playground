@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "games": [
+    {
+      "slug": "neon-hockey",
+      "title": "霓虹冰球",
+      "version": "0.6.0",
+      "source_repository": "https://github.com/idoku/neon-hockey",
+      "source_branch": "codex/source-delivery",
+      "source_commit": "3685b45538f93674b3398f009b527e6a293d1780",
+      "runtime_zip_sha256": "1056793e0fd74ccf647c7d02eb13762d7eface6b806e9e4b4f1159d14aff0c48",
+      "runtime_zip_bytes": 33264,
+      "files": {
+        "index.html": "689db6ffd3f099ac95b8904b735543b8401f1bf6fd51e10c3cd9571745e39dc3",
+        "style.css": "ac874faefd0a6680727275b35f295aab74c3418842380bfe412b9d2799b520a5",
+        "cup.js": "634523f276a58ab1f839e29bb690b5906f8d3508186d5ee5e486c3413dd4bc25",
+        "physics.js": "584d1107855c1dd3ff6d832fc17e21ca2b324774ae3ebd8144c82c72e499a82e",
+        "records.js": "1bd10c72d696cc1fb2e4512a99952e8acefb208f25082732178daea6976940d3",
+        "game.js": "5069322e2fe984e60eaf70650cd9a4f6d3636d6bc6b057b5602d2e430cd8197a",
+        "neon-platform.js": "760c4da1adff480b8897cd06a1e920893cf0a50e56d6af98882e01ac6ef9d127"
+      },
+      "play_path": "neon-hockey/",
+      "browser_acceptance": "pending",
+      "phone_acceptance": "pending"
+    },
+    {
+      "slug": "neon-flow-connect",
+      "title": "霓虹连线",
+      "version": "1.2.0",
+      "source_repository": "https://github.com/idoku/neon-flow-connect",
+      "source_branch": "codex/source-delivery",
+      "source_commit": "27cb45758fc5589ae2e17ace9b4efde9c0d90c2c",
+      "runtime_zip_sha256": "3b94a3b0da95d8301e7c9edbe1ec6bd656357ba29887fe13f4a9c177da91b195",
+      "runtime_zip_bytes": 27196,
+      "files": {
+        "index.html": "80ab8c18487c06f785a804362b536cea67767b0b7d4a93d90df590caee0f2638",
+        "style.css": "325ac1912eb3b6ad41637f5eec07685166becc8722897dcfe55104d186b03fab",
+        "levels.js": "7e376b31c5c95ca794598e4719e0520c7cba0b64877832eec8c7bb14e69e9d2f",
+        "engine.js": "a9a1824947cb66699649defc062be78da03bca428d239018ca77bce87e430966",
+        "audio.js": "38f44b9d0998ee56af34644b8c16b92e83bf805985f730ed346f092a5e66e146",
+        "store.js": "5c0554272dcdb6869e10e1f719aea2e19353a36792d875ae156cd8a3c7de1d23",
+        "share.js": "17aed6a2a356a46e50ff64517b2d5330fb1d3bcb63865ab2377e56160b2986fb",
+        "social.js": "8c629ab325358cd3f5ff2ef536967ea32ed2a463809f98da4f871812fa2f5c93",
+        "game.js": "bc758d8861cb339a5faf1332538d044eaa7079b532f9f153ebc50006ff251e76"
+      },
+      "play_path": "neon-flow-connect/",
+      "browser_acceptance": "pending",
+      "phone_acceptance": "pending"
+    },
+    {
+      "slug": "neon-gridlock",
+      "title": "霓虹圈地",
+      "version": "0.1.1",
+      "source_repository": "https://github.com/idoku/neon-gridlock",
+      "source_branch": "codex/source-delivery",
+      "source_commit": "2156590abdf3d0753c137042a5c4fc7618c33bdc",
+      "runtime_zip_sha256": "35edbb1d235f9fd3640f7e557b328e88e62a2b429121effd5aafd8efbfe9e8f2",
+      "runtime_zip_bytes": 17126,
+      "files": {
+        "engine.js": "2f80cc12c27f56aa111855237f3aab41a4f57384cfd1a6f9c909a2d0e64afad2",
+        "game.js": "3e10c463c026b3057acf8e4faa0f4c4399ab3b028531d1c6036fff6f0f0475f0",
+        "index.html": "cee8dec126dda31a5deb37a53c15e5618208346d419b7e761b04af9892f3fd4f",
+        "neon-platform.js": "760c4da1adff480b8897cd06a1e920893cf0a50e56d6af98882e01ac6ef9d127",
+        "records.js": "d4972d8ea66d73e29d5bddc787cc1ebd51566a71d4e13ea21b4419b5b04cc23b",
+        "style.css": "28e91e13ab26424448e50789ede146ef1acd6c995baad85ab4ea79808dd2bbbf"
+      },
+      "play_path": "neon-gridlock/",
+      "browser_acceptance": "pending",
+      "phone_acceptance": "pending"
+    }
+  ]
+}

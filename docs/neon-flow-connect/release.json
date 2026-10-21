@@ -1,0 +1,24 @@
+{
+  "slug": "neon-flow-connect",
+  "title": "霓虹连线",
+  "version": "1.2.0",
+  "source_repository": "https://github.com/idoku/neon-flow-connect",
+  "source_branch": "codex/source-delivery",
+  "source_commit": "27cb45758fc5589ae2e17ace9b4efde9c0d90c2c",
+  "runtime_zip_sha256": "3b94a3b0da95d8301e7c9edbe1ec6bd656357ba29887fe13f4a9c177da91b195",
+  "runtime_zip_bytes": 27196,
+  "files": {
+    "index.html": "80ab8c18487c06f785a804362b536cea67767b0b7d4a93d90df590caee0f2638",
+    "style.css": "325ac1912eb3b6ad41637f5eec07685166becc8722897dcfe55104d186b03fab",
+    "levels.js": "7e376b31c5c95ca794598e4719e0520c7cba0b64877832eec8c7bb14e69e9d2f",
+    "engine.js": "a9a1824947cb66699649defc062be78da03bca428d239018ca77bce87e430966",
+    "audio.js": "38f44b9d0998ee56af34644b8c16b92e83bf805985f730ed346f092a5e66e146",
+    "store.js": "5c0554272dcdb6869e10e1f719aea2e19353a36792d875ae156cd8a3c7de1d23",
+    "share.js": "17aed6a2a356a46e50ff64517b2d5330fb1d3bcb63865ab2377e56160b2986fb",
+    "social.js": "8c629ab325358cd3f5ff2ef536967ea32ed2a463809f98da4f871812fa2f5c93",
+    "game.js": "bc758d8861cb339a5faf1332538d044eaa7079b532f9f153ebc50006ff251e76"
+  },
+  "play_path": "neon-flow-connect/",
+  "browser_acceptance": "pending",
+  "phone_acceptance": "pending"
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "neon-gridlock",
+  "title": "霓虹圈地",
+  "version": "0.1.1",
+  "source_repository": "https://github.com/idoku/neon-gridlock",
+  "source_branch": "codex/source-delivery",
+  "source_commit": "2156590abdf3d0753c137042a5c4fc7618c33bdc",
+  "runtime_zip_sha256": "35edbb1d235f9fd3640f7e557b328e88e62a2b429121effd5aafd8efbfe9e8f2",
+  "runtime_zip_bytes": 17126,
+  "files": {
+    "engine.js": "2f80cc12c27f56aa111855237f3aab41a4f57384cfd1a6f9c909a2d0e64afad2",
+    "game.js": "3e10c463c026b3057acf8e4faa0f4c4399ab3b028531d1c6036fff6f0f0475f0",
+    "index.html": "cee8dec126dda31a5deb37a53c15e5618208346d419b7e761b04af9892f3fd4f",
+    "neon-platform.js": "760c4da1adff480b8897cd06a1e920893cf0a50e56d6af98882e01ac6ef9d127",
+    "records.js": "d4972d8ea66d73e29d5bddc787cc1ebd51566a71d4e13ea21b4419b5b04cc23b",
+    "style.css": "28e91e13ab26424448e50789ede146ef1acd6c995baad85ab4ea79808dd2bbbf"
+  },
+  "play_path": "neon-gridlock/",
+  "browser_acceptance": "pending",
+  "phone_acceptance": "pending"
+}

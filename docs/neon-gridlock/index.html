@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><title>霓虹圈地</title><link rel="stylesheet" href="./style.css"></head>
+<body><main id="app">
+  <header><button id="help" class="icon" aria-label="玩法说明">?</button><div class="wordmark"><span>霓虹</span><strong>圈地</strong></div><button id="menu" class="icon" aria-label="打开菜单">☰</button></header>
+  <section class="scorebar"><div class="score cyan"><span>你</span><strong id="mine">0</strong><small id="extra-mine"></small></div><div class="turn"><b id="turn">准备落笔</b><span id="remaining">16格 · 最后一笔归你</span></div><div class="score pink"><span>电脑</span><strong id="theirs">0</strong><small id="extra-theirs"></small></div></section>
+  <section id="board-area"><div id="board"><canvas id="canvas" width="500" height="500" aria-label="霓虹圈地棋盘"></canvas><div id="edges"></div></div><div id="toast" aria-live="polite"></div></section>
+  <section class="round-footer"><div id="message" aria-live="polite">点两颗光点之间，画下你的一笔</div><div class="round-meta"><span id="tier-label">新手场</span><span id="combo">封一格，再走一步</span></div></section>
+  <footer><button id="records">战绩·分享</button><button id="new-round">新一局</button><span id="storage">正在读取存档…</span></footer>
+  <div id="overlay" class="overlay"><section id="panel" class="panel" role="dialog" aria-modal="true"></section></div>
+</main><script src="./engine.js"></script><script src="./records.js"></script><script src="./neon-platform.js"></script><script src="./game.js"></script></body></html>

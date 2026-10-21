@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#080e20">
+  <title>霓虹连线</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <button id="menu" class="icon-button" aria-label="返回关卡选择" title="关卡"><span aria-hidden="true">▦</span></button>
+      <div class="brand"><span class="brand-dot"></span><span>霓虹连线</span></div>
+      <button id="sound" class="icon-button" aria-label="开启声音" aria-pressed="false" title="声音">♪</button>
+    </header>
+    <section id="home" class="home" aria-label="关卡选择">
+      <div class="hero">
+        <div class="eyebrow">NEON / CIRCUIT CONNECT</div>
+        <h1>让每一道光<br><em>找到它的终点。</em></h1>
+        <canvas id="hero-canvas" width="440" height="240" aria-label="彩色霓虹回路"></canvas>
+        <div class="hero-meta"><span>同色相连</span><span>线路不交叉</span><span>60 重光境</span></div>
+      </div>
+      <button id="play" class="primary play-button">点亮第一道光 <span aria-hidden="true">↗</span></button>
+      <div class="home-social"><button id="home-ranks" class="text-button">✦ 我的战绩榜</button><span id="progress-text">0 / 60 已点亮</span></div>
+      <div class="section-label"><span>光境探索</span><span>用更少步数点亮</span></div>
+      <nav id="chapters" class="chapters" aria-label="选择光境章节"></nav>
+      <p id="chapter-hint" class="chapter-hint"></p>
+      <div id="levels" class="levels"></div>
+      <p class="home-note">慢慢想，轻轻连。这里没有倒计时。</p>
+    </section>
+    <section id="game" class="game" hidden>
+      <div class="level-heading"><div><div id="level-kicker" class="eyebrow">LIGHT 01</div><h2 id="level-name">初次通电</h2></div><div class="heading-actions"><span id="grid-size" class="grid-size">5 × 5</span><button id="social" class="icon-button" aria-label="战绩与分享" title="战绩与分享">✦</button></div></div>
+      <div class="status-row"><div><strong id="connected">0</strong><span id="pair-count"> / 5 接通</span></div><div class="moves"><span id="moves">0</span> 次连线</div></div>
+      <div id="pair-lights" class="pair-lights" aria-label="线路接通进度"></div>
+      <div id="board-wrap" class="board-wrap"><canvas id="board" width="500" height="500" tabindex="0" aria-label="连线棋盘；按住同色光点拖动连接，也可按回车选择、方向键连线、回车接通、Escape取消"></canvas><div class="board-corners" aria-hidden="true"></div><div id="board-flash" class="board-flash" aria-hidden="true"></div></div>
+      <div class="guide-line"><span id="guide-dot" class="guide-dot"></span><p id="guide">从青色光点出发，拖到另一个同色光点。</p><button id="help" class="help-button" aria-label="查看玩法">?</button></div>
+      <div class="controls"><button id="undo" class="secondary" disabled><span aria-hidden="true">↶</span> 撤销</button><button id="reset" class="secondary"><span aria-hidden="true">↻</span> 重来</button></div>
+      <p class="game-note">拖回去可以回退 · 点线路可擦除</p>
+    </section>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="complete" class="modal" role="dialog" aria-modal="true" aria-labelledby="complete-title" hidden>
+      <div class="modal-card completion-card"><div class="success-emblem" aria-hidden="true">✦</div><div class="eyebrow">CIRCUIT ONLINE</div><h2 id="complete-title">整个光境，被你点亮了。</h2><p id="complete-stats">5 条光路，全部接通。</p><div id="complete-stars" class="stars" aria-label="三星">✦ ✦ ✦</div><button id="next" class="primary">前往下一重光境 →</button><button id="complete-share" class="secondary share-result">晒出我的光境 ↗</button><button id="replay" class="text-button">再点亮一次</button></div>
+    </div>
+    <div id="help-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="help-title" hidden><div class="modal-card"><div class="eyebrow">HOW TO CONNECT</div><h2 id="help-title">三步，点亮霓虹。</h2><ol class="help-list"><li><b>找到同色光点</b><span>按住其中一个，沿格子横着或竖着拖动。</span></li><li><b>让光路接通</b><span>到达同色的另一端后松手。线路不能交叉。</span></li><li><b>把所有颜色接通</b><span>不用填满每个空格，也没有时间限制。</span></li></ol><p class="help-tip">画错了？往回拖即可回退；点已接通的线路可以擦除，撤销能恢复上一步。</p><button id="help-close" class="primary">我来试试</button></div></div>
+    <div id="reset-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="reset-title" hidden><div class="modal-card"><h2 id="reset-title">重新点亮这一关？</h2><p>当前的连线会清空，关卡进度会保留。</p><button id="reset-confirm" class="primary">重新开始</button><button id="reset-cancel" class="text-button">继续连线</button></div></div>
+    <div id="social-modal" class="modal social-modal" role="dialog" aria-modal="true" aria-labelledby="social-title" hidden><div class="modal-card social-card">
+      <div class="social-heading"><h2 id="social-title">把光境，变成战绩。</h2><button id="social-close" class="icon-button" aria-label="关闭战绩与分享">×</button></div>
+      <div class="social-tabs"><button id="rank-tab" aria-pressed="true">个人战绩榜</button><button id="share-tab" aria-pressed="false">挑战卡</button></div>
+      <section id="rank-panel"><label class="rank-select">选择光境 <select id="rank-level"><option value="1">01 · 初次通电</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option></select></label><p id="rank-subtitle"></p><ol id="rank-list" class="rank-list"></ol><p id="rank-empty"></p><p id="rank-storage" class="social-footnote"></p></section>
+      <section id="share-panel" hidden><canvas id="share-card" width="480" height="720" aria-label="本局真实棋盘挑战卡"></canvas><div class="share-actions"><button id="share-comment" class="primary" disabled>去评论区挑战 ↗</button><button id="share-note" class="secondary" disabled>晒成笔记</button></div><p id="social-status" role="status" aria-live="polite"></p></section>
+    </div></div>
+    <footer>NEON SERIES <span>01 → 02</span></footer>
+  </main>
+  <script src="./levels.js"></script><script src="./engine.js"></script><script src="./audio.js"></script><script src="./store.js"></script><script src="./share.js"></script><script src="./social.js"></script><script src="./game.js"></script>
+</body>
+</html>

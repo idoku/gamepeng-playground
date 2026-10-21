@@ -1,0 +1,22 @@
+{
+  "slug": "neon-hockey",
+  "title": "霓虹冰球",
+  "version": "0.6.0",
+  "source_repository": "https://github.com/idoku/neon-hockey",
+  "source_branch": "codex/source-delivery",
+  "source_commit": "3685b45538f93674b3398f009b527e6a293d1780",
+  "runtime_zip_sha256": "1056793e0fd74ccf647c7d02eb13762d7eface6b806e9e4b4f1159d14aff0c48",
+  "runtime_zip_bytes": 33264,
+  "files": {
+    "index.html": "689db6ffd3f099ac95b8904b735543b8401f1bf6fd51e10c3cd9571745e39dc3",
+    "style.css": "ac874faefd0a6680727275b35f295aab74c3418842380bfe412b9d2799b520a5",
+    "cup.js": "634523f276a58ab1f839e29bb690b5906f8d3508186d5ee5e486c3413dd4bc25",
+    "physics.js": "584d1107855c1dd3ff6d832fc17e21ca2b324774ae3ebd8144c82c72e499a82e",
+    "records.js": "1bd10c72d696cc1fb2e4512a99952e8acefb208f25082732178daea6976940d3",
+    "game.js": "5069322e2fe984e60eaf70650cd9a4f6d3636d6bc6b057b5602d2e430cd8197a",
+    "neon-platform.js": "760c4da1adff480b8897cd06a1e920893cf0a50e56d6af98882e01ac6ef9d127"
+  },
+  "play_path": "neon-hockey/",
+  "browser_acceptance": "pending",
+  "phone_acceptance": "pending"
+}
