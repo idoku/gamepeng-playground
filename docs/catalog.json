@@ -7,7 +7,7 @@
       "version": "0.6.0",
       "source_repository": "https://github.com/idoku/neon-hockey",
       "source_branch": "codex/source-delivery",
-      "source_commit": "3685b45538f93674b3398f009b527e6a293d1780",
+      "source_commit": "bef5120f59fd62b4404b67b62703987aee3164e1",
       "runtime_zip_sha256": "1056793e0fd74ccf647c7d02eb13762d7eface6b806e9e4b4f1159d14aff0c48",
       "runtime_zip_bytes": 33264,
       "files": {
@@ -21,7 +21,9 @@
       },
       "play_path": "neon-hockey/",
       "browser_acceptance": "pending",
-      "phone_acceptance": "pending"
+      "phone_acceptance": "pending",
+      "description": "拖动球拍击球得分，挑战对手与杯赛。",
+      "audio_acceptance": "pending"
     },
     {
       "slug": "neon-flow-connect",
