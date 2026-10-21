@@ -1,0 +1,27 @@
+{
+  "source_repository": "https://github.com/idoku/neon-tower-smash",
+  "source_branch": "codex/source-delivery",
+  "source_commit": "ed057be061ffdcd05948d73ccaa97be11dd05bdb",
+  "slug": "neon-tower-smash",
+  "title": "霓虹轰塔",
+  "description": "拖动弹弓击破目标，用有限弹药挑战关卡。",
+  "version": "0.3.0-pages.1",
+  "runtime_zip_sha256": "6382e6a91c0871d6f9d74e823d03047bcf71e04f9fcf5aa20fbcfcf3e94a8e74",
+  "runtime_zip_bytes": 58771,
+  "files": {
+    "assets/matter.min.js": "72d30be0f579eb02ce1e0b6f9d359a4f392e6837e5a26ba8be5dbee7f88e24ae",
+    "game.js": "b991d90ab43d310c1d18fb466c940e486fdd3150d4aa3dd29191eca03de30f03",
+    "index.html": "b16b364e59248138e6777863f5df2c7b35429ec3e5fe2c5905217de36d5a1f79",
+    "levels.js": "9753551721bd3efcf049343a122d0611ca5ad63d0e0c01eeaff3fc8179224888",
+    "neon-platform.js": "760c4da1adff480b8897cd06a1e920893cf0a50e56d6af98882e01ac6ef9d127",
+    "physics.js": "bb2a89e535f93cef3bb62432c2d4dec30095df073d0ab7e18d23fe169f8e601b",
+    "records.js": "1db0c549a8394be6a91460ed99f5770eab1ab3cba2d961adc10f053e072c4e7d",
+    "scenes.js": "80825f181cc2584dbc84ea11a060ad243dcb0e382db208f21548bbddd42f028f",
+    "style.css": "e5b42d661abe9ea9a4af0549577f2f44284909685e03a57d5ae18db1a1c8fc07",
+    "third-party-licenses.json": "97ab64497c2cfaf8cca7ca7b383c56d6e73d666e0d3dc9431741bd68b30f2885"
+  },
+  "play_path": "neon-tower-smash/",
+  "browser_acceptance": "pending",
+  "phone_acceptance": "pending",
+  "audio_acceptance": "pending"
+}

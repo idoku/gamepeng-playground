@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>霓虹轰塔</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="app">
+    <header class="top">
+      <div class="brand"><i></i><div><h1>霓虹轰塔</h1><small>NEON / TOWER SMASH</small></div></div>
+      <div class="top-actions"><button id="levelsBtn" aria-label="选择关卡" disabled>关卡</button><button id="menuBtn" aria-label="战绩与设置" disabled>•••</button></div>
+    </header>
+    <section class="hud" aria-label="游戏状态">
+      <div><small id="levelLabel">01 / 初次引爆</small><strong id="shots">● ● ●</strong><span id="ammoLabel">剩余 3 发</span></div>
+      <div><small>能量核心</small><strong id="targets">0 / 1</strong><span id="goalLabel">击破全部核心</span></div>
+      <div><small>本关得分</small><strong id="score">0</strong><span id="comboLabel">瞄准塔的薄弱处</span></div>
+    </section>
+    <section id="arena" aria-label="轰塔场地">
+      <canvas id="game" width="480" height="660" tabindex="0" aria-label="弹弓场地：拖动左下能量弹，向左下拉后松手；键盘左右调角度，上下调力度，空格发射"></canvas>
+      <div class="stage-tag"><span id="stageName">初次引爆</span><span id="stageTip">瞄准粉色核心，松手引爆</span></div>
+      <div id="shotToast" class="shot-toast" aria-live="polite"></div>
+      <div id="launchGuide" class="launch-guide"><span>从这里向左下拉</span><i>↙</i></div>
+      <div id="home" class="overlay home">
+        <div class="home-card"><span class="eyebrow">每一发，都要找准破局点</span><h2>霓虹<span>轰塔</span></h2><p>寻找弹道 · 解锁强力弹 · 点亮光之塔</p><div class="home-rule"><b>拉</b>拖动能量弹 <em>→</em> <b>放</b>松手发射</div><button id="startBtn" class="primary" disabled>正在读取进度…</button><small id="homeProgress">30 关 · 5 章节 · 越往后越考验准度</small></div>
+      </div>
+      <div id="result" class="overlay" hidden>
+        <div class="result-card"><span id="resultEyebrow" class="eyebrow">核心已全部击破</span><h2 id="resultTitle">整塔引爆！</h2><div id="resultStars" class="result-stars">★★★</div><p id="resultFacts"></p><div id="resultBest"></div><div class="result-actions"><button id="retryBtn">再来一次</button><button id="nextBtn" class="primary">下一座塔 →</button></div><button id="cardBtn" class="text-btn">战绩卡 · 分享挑战</button></div>
+      </div>
+    </section>
+    <footer><div class="weapon"><span class="orb-icon" id="weaponOrb"></span><div><b id="weaponName">能量弹</b><small id="instruction">拖动左下光球，向后拉再松手</small></div><button id="toolBtn" aria-label="强力道具" disabled>道具 · 1</button><button id="resetBtn" aria-label="重开本关" disabled>↻</button></div><div class="power-row"><span id="powerLabel">力度</span><div class="power-track"><i id="powerFill"></i></div><span id="powerValue">—</span></div><div class="bottom-status"><span id="saveStatus">读取进度…</span><span>v0.3.0</span></div></footer>
+    <div id="sheet" class="sheet" hidden><div class="sheet-card"><div class="sheet-head"><h2 id="sheetTitle">选择关卡</h2><button id="closeSheet" aria-label="关闭面板">✕</button></div><div id="sheetBody"></div></div></div>
+    <div id="notice" class="notice" aria-live="polite"></div>
+  </main>
+  <script src="./assets/matter.min.js"></script>
+  <script src="./neon-platform.js"></script>
+  <script src="./levels.js"></script>
+  <script src="./scenes.js"></script>
+  <script src="./physics.js"></script>
+  <script src="./records.js"></script>
+  <script src="./game.js"></script>
+</body>
+</html>
