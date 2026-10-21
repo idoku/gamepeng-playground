@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>霓虹寿司保卫战</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="engine.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+<main id="app">
+  <section class="arena" aria-label="寿司防守战场"><canvas id="battle" aria-label="机器人从上方进攻，厨师自动攻击"></canvas></section>
+  <div class="hud">
+    <header>
+      <div class="brand"><div class="brand-mark"><img src="./assets/sushi.webp" alt=""></div><div><h1>霓虹寿司<span>保卫战</span></h1><span class="eyebrow">合成你的深夜守护者</span></div></div>
+      <button id="pause" class="icon" aria-label="暂停游戏"><span class="pause-bars" aria-hidden="true"></span></button>
+    </header>
+    <section class="stats" aria-label="游戏状态">
+      <div class="money"><img src="./assets/coin.webp" alt=""><div><span>寿司币</span><b id="coins">80</b></div></div>
+      <div class="wave-stat"><span>营业波次</span><b id="wave">准备 / 10</b></div>
+      <div class="enemy-stat"><span>剩余敌人</span><b id="robots">0</b></div>
+    </section>
+    <div id="wave-track" class="wave-track" aria-label="十波进度"></div>
+  </div>
+  <div class="arena-top"><span class="live-dot"></span><span id="phase">准备营业</span><span id="power">战力 16</span></div>
+  <div id="ready-card"><span class="ready-kicker">今 夜 的 守 店 计 划</span><h2>合成更强的厨师，<br>守住最后一份寿司。</h2><div class="ready-steps"><span><b>1</b> 招募</span><i>→</i><span><b>2</b> 合成</span><i>→</i><span><b>3</b> 迎战</span></div></div>
+  <div id="grid" role="group" aria-label="战场厨师布阵，三列三行"></div>
+  <footer>
+    <div class="shop-status"><span class="shop-name">寿司店 <small>耐久</small></span><div class="bar"><i id="health"></i></div><b id="hp">100</b><span class="hp-max">/ 100</span></div>
+    <p id="hint" role="status">点两位同级厨师合成 · 拖动调整位置</p>
+    <div class="actions"><button id="hire" class="secondary"><span class="hire-symbol" aria-hidden="true">＋</span><span>招募厨师<small>24 币 · Lv.1</small></span></button><button id="start" class="primary"><b id="start-title">开始营业</b><small id="start-sub">第 1 波 →</small></button><div id="battle-status" hidden><b>守店中</b><span>边打边合成</span></div></div>
+    <div class="utility-row"><label class="scene-control"><span aria-hidden="true">◈</span><select id="scene" aria-label="切换背景"><option value="bg-night">霓虹夜市</option><option value="bg-sakura">樱花街角</option><option value="bg-rain">雨夜赛博</option></select></label><span id="best">最高守住 0 波</span><button id="catalog" aria-label="查看角色图鉴">角色图鉴 <span>›</span></button></div>
+  </footer>
+  <section id="overlay" class="overlay" aria-label="游戏说明或结算" hidden><div class="panel"><div class="stamp" id="stamp">深夜营业</div><h2 id="result-title">霓虹寿司保卫战</h2><p id="result-copy">招募、合成、守店。</p><div id="instructions" hidden></div><button id="continue" class="primary">继续营业</button><button id="restart" class="plain" hidden>重新开一局</button></div></section>
+</main>
+</body>
+</html>
