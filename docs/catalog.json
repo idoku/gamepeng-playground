@@ -169,6 +169,27 @@
       "browser_acceptance": "pending",
       "phone_acceptance": "pending",
       "audio_acceptance": "pending"
+    },
+    {
+      "source_repository": "https://github.com/idoku/robo-crash-lab",
+      "source_branch": "main",
+      "source_commit": "6876d985bd1af9a45c63ba2392e5c184e7ee6225",
+      "slug": "crash-test-lab",
+      "title": "Crash Test Lab",
+      "description": "Four physics tests: drag a robot into a saw, guillotine, anvil and pendulum. Independent silent H5 pilot with local progress.",
+      "version": "0.1.0",
+      "runtime_zip_sha256": "ada7f2b534e3c42dea2beb98d9c0729ce2f1c2bb1e4e441d5fb492226739d250",
+      "runtime_zip_bytes": 11616,
+      "files": {
+        "index.html": "c1c607104c84eabb273b2b39872fc57f555ac9e765edb3e954f4ba76259c9f86",
+        "styles.css": "b6f86ca25c40f7512c4d544543aeb648c4d5e3eaacaef6de972fd4f92dd67720",
+        "main.js": "55dacc0c314da8edc8bfa583ea101eb80155eadcf660c9253b07053e8e943df4",
+        "engine.js": "749f26e00ddf299b941a560fa891ce917cd77d1f1b3784343e23c65f40d13607"
+      },
+      "play_path": "crash-test-lab/",
+      "browser_acceptance": "pending",
+      "phone_acceptance": "pending",
+      "audio_acceptance": "pending"
     }
   ]
 }
