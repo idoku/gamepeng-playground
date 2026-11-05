@@ -1,0 +1,16 @@
+/* Share the reviewed sample presentation; preserve its historical entry. */
+@import url('fidelity.css');
+/* Keep retry and mute reachable after an unsuccessful experiment. */
+.play-area.engaged .hud{opacity:1;pointer-events:none}
+.play-area.engaged .level-card{opacity:.5}
+.play-area.engaged .hud-actions{pointer-events:auto;opacity:.72}
+.play-area.engaged .hud-actions:hover,.play-area.engaged .hud-actions:focus-within{opacity:1}
+.help-content{max-height:min(75svh,650px);overflow-y:auto;overscroll-behavior:contain}
+.help-content a{color:#9beaff}.help-content select{max-width:100%;margin:6px 0 0}.voice-choice{display:flex;gap:8px;align-items:center;margin-bottom:12px;line-height:1.5}.voice-choice input{width:18px;height:18px;flex-shrink:0}#policy-note:empty{display:none}#policy-note:not(:empty){padding:8px;border:1px solid #a88a24;color:#ffe391}
+@media(max-height:500px) and (orientation:landscape){body{padding:6px}.sample{width:min(100%,calc((100svh - 32px)*387/689))}.help-content{font-size:11px;max-height:75svh}.sample-note{font-size:8px}}
+
+/* Review is deliberately visible during play and in the ending dialog. */
+.review-badge{position:absolute;z-index:6;bottom:1.8%;left:3%;right:3%;margin:0;padding:6px 4px;text-align:center;background:#382a0ff2;color:#ffe391;border:1px solid #c7a43c;border-radius:5px;font-size:clamp(7px,2.4cqw,11px);font-weight:800;letter-spacing:.3px;pointer-events:none}
+.review-controls{margin:14px 0;padding:10px;border:1px solid #a88a24;border-radius:8px;background:#29271d}.review-controls h2{font-size:13px;margin:0 0 8px;color:#ffe391}.review-controls button{display:block;width:100%;margin-top:8px;padding:8px;background:#33445b;color:#fff;border:1px solid #687d99;border-radius:5px}.review-controls select{width:100%;margin-left:0}.review-result-note{color:#ffe391;font-size:11px;line-height:1.5;max-width:290px;margin:8px auto}
+
+.play-area.review-mode .hint{display:none}

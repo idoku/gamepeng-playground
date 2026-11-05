@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Full campaign WIP · Review notes</title>
+  <style>
+    :root{color-scheme:dark}body{max-width:780px;margin:32px auto;padding:0 20px;background:#100e1d;color:#f2efff;font:17px/1.6 system-ui,sans-serif}a{color:#a7e3ff}h1,h2{line-height:1.2}section{margin:32px 0}nav{display:flex;flex-wrap:wrap;gap:16px}.warning{padding:16px;border:1px solid #bd9a47;border-radius:10px;background:#30281a}li{margin:8px 0}footer{border-top:1px solid #514964;padding-top:16px}
+  </style>
+</head>
+<body>
+  <header>
+    <p><a href="index.html">Return to the 100-level campaign</a></p>
+    <h1>Full campaign review notes</h1>
+    <p class="warning">100-level work-in-progress, not final fidelity or listening acceptance. Independent level checks are not evidence of a continuous 100-level playthrough.</p>
+    <nav aria-label="Review sections"><a href="#design">Design</a><a href="#assets">Assets &amp; audio</a><a href="#playtest">Playtest coverage</a></nav>
+  </header>
+  <main>
+    <section id="design">
+      <h2>Design and source fidelity</h2>
+      <p>The campaign follows the observed game compositions and the reviewed four-level presentation direction. Geometry evidence varies by level:</p>
+      <ul>
+        <li>Levels 1–4: measured source-image layout fields.</li>
+        <li>Levels 5–75: observation-led, authored layout calibration.</li>
+        <li>Levels 76–100: partial, approximate screenshot-coordinate fields. Unmeasured dimensions, missing physics constants and other unspecified behavior remain authored.</li>
+      </ul>
+      <p>These measurements do not recover the original game's complete physics, forces, timing or scoring. The original meaning and exact acceptance rule for “DESTROY 5” remain unknown; the current interpretation is provisional.</p>
+      <p><a href="https://www.astrocade.com/games/robo-crash/01M48YNPXW16CV80FHVP4RWVDS" target="_blank" rel="noopener">Compare with the original Robo Crash on Astrocade</a>.</p>
+    </section>
+    <section id="assets">
+      <h2>Assets and audio</h2>
+      <p>The machinery sounds are independently authored, not original-game recordings. Recorded character reactions are provisional and OFF by default on a fresh profile. The implementation team has not listened to these takes or accepted their character, expressiveness, edit quality or likeness to the original voice. Enabling the trial voice is an explicit opt-in and the preference is saved.</p>
+      <p>Automated signal checks do not establish perceived loudness, voice suitability or listening acceptance. Headphone listening and physical device audio checks remain untested.</p>
+      <p><a href="voice-audition.html">Audition the provisional takes and previous voice</a> · <a href="audio/NOTICE.html">Read audio credits and provenance</a></p>
+    </section>
+    <section id="playtest">
+      <h2>What has been checked</h2>
+      <ul>
+        <li>All 100 levels: independent model goal checks using public inputs. These checks do not establish browser playability or a continuous campaign run.</li>
+        <li>Native browser: sequential completion of levels 1–11.</li>
+        <li>Native browser single-level review: levels 27, 50, 72, 79 and 100 completed separately; ending review retry and replay checked.</li>
+        <li>Level 79 initial belt overlap was corrected with an authored clearance adjustment; its original belt width remains unmeasured.</li>
+      <li>Real Chromium audio: 292 offline renders at 44.1 and 48 kHz, zero full-scale or non-finite samples. Maximum measured overlap peaks were −2.87 and −2.36 dBFS. This is signal evidence, not listening.</li>
+        <li>Native narrow-window and 125% zoom controls, help scrolling, pointer drag and retry checked; optional voices loaded on explicit opt-in and switched off again.</li>
+      </ul>
+      <p>A complete sequential 100-level native browser playthrough has not been verified. Physical touch, headphones and a physical-device compatibility matrix remain untested. No final visual, audio or overall fidelity acceptance is claimed.</p>
+      <p>Use “WIP single-level review” in Controls &amp; progress to try a level independently without changing saved campaign progress.</p>
+    </section>
+  </main>
+  <footer><a href="index.html">Back to the campaign</a> · Work-in-progress review snapshot</footer>
+</body>
+</html>
