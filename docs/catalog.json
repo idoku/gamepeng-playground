@@ -190,6 +190,29 @@
       "browser_acceptance": "pending",
       "phone_acceptance": "pending",
       "audio_acceptance": "pending"
+    },
+    {
+      "source_repository": "https://github.com/idoku/robo-crash-lab",
+      "source_branch": "work/issue-2-faithful-remake-checkpoint",
+      "source_commit": "8076faf619f5242308a34949825ccd7186c9befe",
+      "slug": "crash-test-lab-wip75-09de404",
+      "title": "Crash Test Lab · 75关WIP试玩",
+      "description": "未完成的75关物理复刻研究，供提前试玩反馈。原作仍有后续关卡；并非完整复刻。独立美术与可选合成音效，部分原作规则未核实。",
+      "version": "0.4.0-wip75-09de404",
+      "runtime_zip_sha256": "09de4048890c1ec0088b4c5d8e60c4cb7d573de910daaaeeb0dc22f1820e779e",
+      "runtime_zip_bytes": 27789,
+      "files": {
+        "engine.js": "862136d08bec00ee8922b446cadea73a5e5b673525c27177454fa1bff142b777",
+        "index.html": "3e72e4e45c43e000d033a266db02af6bfdaaa5f15da333ddfc0b7f0c837bf69d",
+        "levels.js": "ee719bd7d2d8bab9f35db9c073448e8fc1cd9af016c36abf6a48069a4c0a5838",
+        "machines.js": "06d1be972db671f88feab798b1bf9366ae814f7b6226183bbb9f84c7b41a5bb1",
+        "main.js": "c2ad067647d1311b0533a9ca28839fd14a99d843fb9b6b588283d772ab6e2664",
+        "styles.css": "e3456903cfc44666d02a4d1f460818a517f15d3dadddd8bda3484b687bb13352"
+      },
+      "play_path": "crash-test-lab-wip75-09de404/",
+      "browser_acceptance": "pending",
+      "phone_acceptance": "pending",
+      "audio_acceptance": "pending"
     }
   ]
 }
