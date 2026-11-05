@@ -213,6 +213,29 @@
       "browser_acceptance": "pending",
       "phone_acceptance": "pending",
       "audio_acceptance": "pending"
+    },
+    {
+      "source_repository": "https://github.com/idoku/robo-crash-lab",
+      "source_branch": "work/issue-2-faithful-remake-checkpoint",
+      "source_commit": "f1bda1f2dd07bae1ac0afba5fc9ae2bb7b7bb83a",
+      "slug": "crash-test-lab-wip100-7fded519",
+      "title": "Crash Test Lab · 100关WIP试玩",
+      "description": "100关及终局已按原作观察重建并完成普通输入通关研究，仍为WIP，非完整保真验收。独立美术与可选合成音效，物理时序、五部位判定及音效仍有差异；关卡选择与本地解锁为新增便利。",
+      "version": "0.4.0-wip100-7fded519",
+      "runtime_zip_sha256": "7fded519924e17239007f5825bc73e6848d0b0a14d1032242f889a00f0f89b9e",
+      "runtime_zip_bytes": 29534,
+      "files": {
+        "engine.js": "f3856cc5576dccdee6124157da55e365f696419cb4d235bd172ae4f714aae264",
+        "index.html": "3e72e4e45c43e000d033a266db02af6bfdaaa5f15da333ddfc0b7f0c837bf69d",
+        "levels.js": "d1e8af3f93bbab50c883ee0cd6536c6b29818313e584c37ddba71f2f4fbb4269",
+        "machines.js": "5104e22d6075f56319d884b7208dcbac7b123ae2712bb6838d4053deb248a792",
+        "main.js": "4c05430b25ce520abe9e925c280168e6eb117972903f4fb9ec11e5ca8ce5e21c",
+        "styles.css": "e3456903cfc44666d02a4d1f460818a517f15d3dadddd8bda3484b687bb13352"
+      },
+      "play_path": "crash-test-lab-wip100-7fded519/",
+      "browser_acceptance": "pending",
+      "phone_acceptance": "pending",
+      "audio_acceptance": "pending"
     }
   ]
 }
