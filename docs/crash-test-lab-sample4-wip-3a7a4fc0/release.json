@@ -1,0 +1,25 @@
+{
+  "source_repository": "https://github.com/idoku/robo-crash-lab",
+  "source_branch": "work/issue-2-faithful-remake-checkpoint",
+  "source_commit": "3977d67e200fa80b64f902140e9ca666e67ac804",
+  "slug": "crash-test-lab-sample4-wip-3a7a4fc0",
+  "title": "Crash the Robo · 前四关WIP对照试玩",
+  "description": "仅前四关保真研究样本，非100关更新，等待用户体验反馈。普通输入通关、重试、存档已核验；音效未实际听验，持拖边界和精确物理仍有未知，控制台受环境政策限制。独立绘制素材，非原作资源。",
+  "version": "0.5.0-sample4-wip-3a7a4fc0",
+  "runtime_zip_sha256": "3a7a4fc059c2d73ef9ad192ec9147cf0d3b5f40ed0d6ca51be62a0c2adc3ba52",
+  "runtime_zip_bytes": 27985,
+  "files": {
+    "engine.js": "f3856cc5576dccdee6124157da55e365f696419cb4d235bd172ae4f714aae264",
+    "fidelity-model.js": "9e4b0f59d33dac9778fcd0023f30005f067b93fba2bbd06029d4758d8fa80f43",
+    "fidelity-render.js": "dcf4182530cd63c80a5c20b40e5624320e71cd4b04e5502966d5a267a7302429",
+    "fidelity.css": "060ffcdefb72cbd9bc89247247155c30fd7f34f142b001d58fca2317f311df24",
+    "fidelity.js": "fa97bfc57f8a06acd3da544055b9480c409b601a1f1875017ce9785c45e6a7e6",
+    "index.html": "9bb96412fbc12a4ca329afc95bf1d180ebb310b60c44297a8cac9bc52ab3f598",
+    "levels.js": "d1e8af3f93bbab50c883ee0cd6536c6b29818313e584c37ddba71f2f4fbb4269",
+    "machines.js": "1d1bac86d194e9a6256817105a04290f8932137cfad5a9b8c6a3c2b9b7813470"
+  },
+  "play_path": "crash-test-lab-sample4-wip-3a7a4fc0/",
+  "browser_acceptance": "pending",
+  "phone_acceptance": "pending",
+  "audio_acceptance": "pending"
+}
