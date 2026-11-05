@@ -1,0 +1,29 @@
+{
+  "source_repository": "https://github.com/idoku/robo-crash-lab",
+  "source_branch": "work/issue-2-faithful-remake-checkpoint",
+  "source_commit": "746fe23094f0c6df6e7645e6bcc0ab68339601e3",
+  "slug": "crash-test-lab-sample4-mix-wip-9bc56a24",
+  "title": "Crash the Robo · 前四关响度WIP试玩",
+  "description": "四关响度修订WIP：提高音乐、机械音效与真人反应的相对音量，加入重叠保护。信号测量与普通输入回归记录随版本绑定；尚未实际听验，非原作音色相似度或完整100关验收。",
+  "version": "0.5.2-sample4-mix-wip-9bc56a24",
+  "runtime_zip_sha256": "9bc56a24a76cde0bc12c30694e50a5e1eb079e3d130c71bf3124fb6cc2456ba4",
+  "runtime_zip_bytes": 92775,
+  "files": {
+    "audio/NOTICE.html": "33376d94df23dc42b5ed138a4fbe2cbb220b940d63d94831ad40c53c47e5e9ae",
+    "audio/robot-pain.wav": "e6cff9061b6e5d2534314307aff8f150d53947d4b9d90f1b9ff15e688e213554",
+    "audio/robot-wheeze.wav": "1fc622c307b6e4c90424c0c21213f40149935e92d3658db708fb9e671ee72485",
+    "engine.js": "f3856cc5576dccdee6124157da55e365f696419cb4d235bd172ae4f714aae264",
+    "fidelity-audio.js": "54ede75ecd0942e271ac6a125064a18abe4372540a5a6d222b8dc42971b472bc",
+    "fidelity-model.js": "726094349510578a505fa97ff7fcfc851f74bf3020b20283fd85317a8338a01b",
+    "fidelity-render.js": "dcf4182530cd63c80a5c20b40e5624320e71cd4b04e5502966d5a267a7302429",
+    "fidelity.css": "060ffcdefb72cbd9bc89247247155c30fd7f34f142b001d58fca2317f311df24",
+    "fidelity.js": "1ff68a8a38a86a7b8106407368c39e88f182f33483925201ecc3b4f19629699c",
+    "index.html": "9595388614958f46637e2381d9b110477ca4d88e78f9375175fcb7c3bbd235c2",
+    "levels.js": "d1e8af3f93bbab50c883ee0cd6536c6b29818313e584c37ddba71f2f4fbb4269",
+    "machines.js": "1d1bac86d194e9a6256817105a04290f8932137cfad5a9b8c6a3c2b9b7813470"
+  },
+  "play_path": "crash-test-lab-sample4-mix-wip-9bc56a24/",
+  "browser_acceptance": "pending",
+  "phone_acceptance": "pending",
+  "audio_acceptance": "pending"
+}
