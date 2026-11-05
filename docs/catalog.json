@@ -261,6 +261,35 @@
       "browser_acceptance": "pending",
       "phone_acceptance": "pending",
       "audio_acceptance": "pending"
+    },
+    {
+      "source_repository": "https://github.com/idoku/robo-crash-lab",
+      "source_branch": "work/issue-2-faithful-remake-checkpoint",
+      "source_commit": "0781ef8fe9f0e82c6f17d894d160b647ae870fe7",
+      "slug": "crash-test-lab-sample4-audio-wip-d2cae872",
+      "title": "Crash the Robo · 前四关音频WIP试玩",
+      "description": "四关音频修订试玩，非100关更新。原创音乐/机械音效与公有领域真人疼痛/喘息录音；普通输入四关、重试、存档、静音回归已核验。尚未实际听验，原作声音相似度、手机与持拖边界未确认；等待用户反馈。",
+      "version": "0.5.1-sample4-audio-wip-d2cae872",
+      "runtime_zip_sha256": "d2cae8723da140477ba864c743e2254abd267e3d0faa578a25f128c1523e5082",
+      "runtime_zip_bytes": 92262,
+      "files": {
+        "audio/NOTICE.html": "33376d94df23dc42b5ed138a4fbe2cbb220b940d63d94831ad40c53c47e5e9ae",
+        "audio/robot-pain.wav": "e6cff9061b6e5d2534314307aff8f150d53947d4b9d90f1b9ff15e688e213554",
+        "audio/robot-wheeze.wav": "1fc622c307b6e4c90424c0c21213f40149935e92d3658db708fb9e671ee72485",
+        "engine.js": "f3856cc5576dccdee6124157da55e365f696419cb4d235bd172ae4f714aae264",
+        "fidelity-audio.js": "fd4727f1338fa26cf3fcd514030d91e1ab5aeda531f340ce5764331782c6f926",
+        "fidelity-model.js": "5607736314df9b784f5d094ab757e4c989f83a27e82de023afa364290b26890b",
+        "fidelity-render.js": "dcf4182530cd63c80a5c20b40e5624320e71cd4b04e5502966d5a267a7302429",
+        "fidelity.css": "060ffcdefb72cbd9bc89247247155c30fd7f34f142b001d58fca2317f311df24",
+        "fidelity.js": "1ff68a8a38a86a7b8106407368c39e88f182f33483925201ecc3b4f19629699c",
+        "index.html": "9595388614958f46637e2381d9b110477ca4d88e78f9375175fcb7c3bbd235c2",
+        "levels.js": "d1e8af3f93bbab50c883ee0cd6536c6b29818313e584c37ddba71f2f4fbb4269",
+        "machines.js": "1d1bac86d194e9a6256817105a04290f8932137cfad5a9b8c6a3c2b9b7813470"
+      },
+      "play_path": "crash-test-lab-sample4-audio-wip-d2cae872/",
+      "browser_acceptance": "pending",
+      "phone_acceptance": "pending",
+      "audio_acceptance": "pending"
     }
   ]
 }
